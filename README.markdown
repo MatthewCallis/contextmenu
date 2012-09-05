@@ -4,14 +4,14 @@ A context menu (right click menu) jQuery plug-in.
 
 ```javascript
 // Context Menu
-  $(document).contextmenu({
-    menu: {
-      'Console Log': function(){ console.log('!'); },
-      'Homepage': 'http://superfamicom.org/',
-      'Go Back': function(){ history.go(-1); },
-      'Do Work': work()
-    }
-  });
+$(document).contextmenu({
+  menu: {
+    'Console Log': function(){ console.log('!'); },
+    'Homepage': 'http://superfamicom.org/',
+    'Go Back': function(){ history.go(-1); },
+    'Do Work': work()
+  }
+});
 ```
 
 This fork was created to fix some issues I had with the original:
