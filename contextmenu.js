@@ -8,26 +8,29 @@
       var contextmenu = $.extend(element, options);
       contextmenu.init(contextmenu);
       contextmenu.bind({
-        'contextmenu':function(e){
+        'contextmenu': function(e){
           if(!e.ctrlKey || !contextmenu.ctrl){
             e.preventDefault();
             $this.start(contextmenu);
             $('#contextmenu').remove();
-            var c = $('<div id="contextmenu">').addClass(contextmenu.style);
-            c.css({
-              position : 'absolute',
-              display  : 'none',
-              'z-index': '10000'
-            }).appendTo($('body'));
+            var c = $(document.createElement('div'))
+              .attr({ 'id': 'contextmenu', 'class': contextmenu.style })
+              .css({
+                'position': 'absolute',
+                'display':  'none',
+                'z-index':  '10000'
+              });
+            $(document.body).append(c);
             for(var i in contextmenu.menu){
-              var menu_item = $('<a>');
-              if(typeof contextmenu.menu[i] === 'function'){
-                menu_item.click(contextmenu.menu[i]);
+              var menu_item = $(document.createElement('a'));
+              if(typeof contextmenu.menu[i]['callback'] === 'function'){
+                menu_item.click(contextmenu.menu[i]['callback']);
               }
               else{
-                menu_item.attr('href', contextmenu.menu[i]);
+                menu_item.attr({ 'href': contextmenu.menu[i]['callback'] });
               }
-              menu_item.html(i).appendTo(c);
+              menu_item.attr({ 'id': contextmenu.menu[i]['id'], 'class': contextmenu.menu[i]['class'] });
+              menu_item.html(contextmenu.menu[i]['title']).appendTo(c);
             }
             // Set position
             var ww = $(document).width();
