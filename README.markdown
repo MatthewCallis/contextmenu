@@ -5,12 +5,12 @@ A context menu (right click menu) jQuery plug-in.
 ```javascript
 // Context Menu
 $(document).contextmenu({
-  menu: {
-    'Console Log': function(){ console.log('!'); },
-    'Homepage': 'http://superfamicom.org/',
-    'Go Back': function(){ history.go(-1); },
-    'Do Work': work()
-  }
+  menu: [
+    { 'title': 'Copy Clip URL', 'id': 'copy-url', 'callback': function(){
+      clip.setText('Copy Me Using ZeroClipboard');
+    } },
+    { 'title': 'Visit Hark', 'callback': 'http://www.hark.com/' }
+  ]
 });
 ```
 
@@ -21,6 +21,7 @@ This fork was created to fix some issues I had with the original:
  - Support For Inline Function Calls
  - SCSS Stylesheet
  - Minified JS/CSS
+ - Setting Attributes on Menu Items
 
 Tested Under:
  - Internet Explorer 8.0.6001.18702
