@@ -22,4 +22,4 @@ This fork was created to fix some issues I had with the original:
  - SCSS Stylesheet
  - Minified JS/CSS
 
-Original by goker.cebeci under the MIT License.
+Original by [goker.cebeci](http://gokercebeci.com/dev/contextmenu) under the MIT License.
