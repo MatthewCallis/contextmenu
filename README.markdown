@@ -22,4 +22,12 @@ This fork was created to fix some issues I had with the original:
  - SCSS Stylesheet
  - Minified JS/CSS
 
+Tested Under:
+ - Internet Explorer 8.0.6001.18702
+ - Internet Explorer 9.0.8112.16421
+ - Google Chrome 23.0.1255.0 dev
+ - Firefox 4.0
+ - Firefox 15.0
+ - Safari 6.0 (8536.25)
+
 Original by [goker.cebeci](http://gokercebeci.com/dev/contextmenu) under the MIT License.
