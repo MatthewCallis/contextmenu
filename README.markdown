@@ -27,6 +27,7 @@ Tested Under:
  - Internet Explorer 9.0.8112.16421
  - Google Chrome 23.0.1255.0 dev
  - Firefox 4.0
+ - Firefox 12.0
  - Firefox 15.0
  - Safari 6.0 (8536.25)
 
