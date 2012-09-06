@@ -1,5 +1,4 @@
-/* CONTEXTMENU
-==============================================================================*/
+// Contextmenu Default
 #contextmenu {
   min-width: 160px;
   border: 1px solid #ddd;
@@ -27,8 +26,7 @@
   }
 }
 
-/* CONTEXTMENU DARK
-------------------------------------------------------------------------------*/
+// Contextmenu Dark
 #contextmenu.dark {
   min-width: 160px;
   border: 1px solid #333;
@@ -47,5 +45,50 @@
   a:hover,
   a:focus {
     color: #d2d2d2;
+  }
+}
+
+// OS X System
+#contextmenu.osx {
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: 'Lucida Grande', LucidaGrande, Helvetica, Arial, sans-serif;
+  font-size: 11pt;
+  opacity: 0.9;
+  min-width: 160px;
+  border: 0;
+
+  a, a:visited {
+    cursor: pointer;
+    color: #000000;
+    display: block;
+
+    margin: 0 0px;
+    padding: 0 21px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+  }
+  a:hover,
+  a:focus {
+    color: #fff;
+    border-top: 1px solid #5b83ec;
+    border-bottom: 1px solid #1759e8;
+    background: #5b83ec;
+    background: -moz-linear-gradient(top, #5b83ec 0%, #1759e8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b83ec), color-stop(100%,#1759e8));
+    background: -webkit-linear-gradient(top, #5b83ec 0%,#1759e8 100%);
+    background: -o-linear-gradient(top, #5b83ec 0%,#1759e8 100%);
+    background: -ms-linear-gradient(top, #5b83ec 0%,#1759e8 100%);
+    background: linear-gradient(to bottom, #5b83ec 0%,#1759e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b83ec', endColorstr='#1759e8',GradientType=0 );
+  }
+  a:first-child {
+    margin: 3px 0 0;
+  }
+  a:last-child {
+    margin: 0 0 3px;
   }
 }

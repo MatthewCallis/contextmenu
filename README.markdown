@@ -5,6 +5,7 @@ A context menu (right click menu) jQuery plug-in.
 ```javascript
 // Context Menu
 $(document).contextmenu({
+	style: 'osx',
   menu: [
     { 'title': 'Copy Clip URL', 'id': 'copy-url', 'callback': function(){
       clip.setText('Copy Me Using ZeroClipboard');
@@ -22,6 +23,7 @@ This fork was created to fix some issues I had with the original:
  - SCSS Stylesheet
  - Minified JS/CSS
  - Setting Attributes on Menu Items
+ - Mac OS X System Style Menu
 
 Tested Under:
  - Internet Explorer 8.0.6001.18702
