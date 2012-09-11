@@ -37,8 +37,8 @@
             var wh = $(document).height();
             var w = c.outerWidth();
             var h = c.outerHeight();
-            var x = e.pageX > (ww - w) ? ww : e.pageX;
-            var y = e.pageY > (wh - h) ? wh : e.pageY;
+            var x = e.pageX > (ww - w) ? (ww - w) : e.pageX;
+            var y = e.pageY > (wh - h) ? (wh - h) : e.pageY;
             c.css({
               display : 'block',
               top     : y,
