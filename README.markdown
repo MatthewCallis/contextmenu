@@ -23,6 +23,7 @@ This fork was created to fix some issues I had with the original:
  - SCSS Stylesheet
  - Minified JS/CSS
  - Setting Attributes on Menu Items
+ - Menu Can Appear Near the Right and Bottom Edges
  - Mac OS X System Style Menu
 
 Tested Under:
